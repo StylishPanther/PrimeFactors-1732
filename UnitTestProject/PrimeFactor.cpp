@@ -11,8 +11,11 @@ public:
 		{
 			if (factor == 4)
 			{
-				ret.push_back(2);
-				ret.push_back(2);
+				while (factor % 2 == 0)
+				{
+					ret.push_back(2);
+					factor >>= 1;
+				}
 			}
 			else
 			{
