@@ -10,16 +10,7 @@ public:
 		int divide = 0;
 		if (factor > 1)
 		{
-			if (factor == 4)
-			{
-				divide = 2;
-				while (factor % divide == 0)
-				{
-					ret.push_back(divide);
-					factor >>= 1;
-				}
-			}
-			else if (factor == 6)
+			if (factor == 4 || factor == 6 || factor == 9)
 			{
 				for (divide = 2; factor > 1; divide++)
 				{
@@ -29,11 +20,6 @@ public:
 						factor /= divide;
 					}
 				}
-			}
-			else if (factor == 9)
-			{
-				ret.push_back(3);
-				ret.push_back(3);
 			}
 			else
 			{
