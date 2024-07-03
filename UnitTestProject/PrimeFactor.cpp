@@ -17,6 +17,11 @@ public:
 					factor >>= 1;
 				}
 			}
+			else if (factor == 6)
+			{
+				ret.push_back(2);
+				ret.push_back(3);
+			}
 			else
 			{
 				ret.push_back(factor);
