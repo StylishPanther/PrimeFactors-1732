@@ -9,7 +9,15 @@ public:
 		vector<int> ret = {};
 		if (factor > 1)
 		{
-			ret.push_back(factor);
+			if (factor == 4)
+			{
+				ret.push_back(2);
+				ret.push_back(2);
+			}
+			else
+			{
+				ret.push_back(factor);
+			}
 		}
 		return ret;
 	}
