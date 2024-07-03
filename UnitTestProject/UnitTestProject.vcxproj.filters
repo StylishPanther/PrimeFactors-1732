@@ -18,36 +18,8 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="interfaceGame.h">
-      <Filter>헤더 파일</Filter>
-    </ClCompile>
     <ClCompile Include="PrimeFactor.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="input1.txt">
-      <Filter>리소스 파일</Filter>
-    </Text>
-    <Text Include="input2.txt">
-      <Filter>리소스 파일</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="game.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="game_better.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="player.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="card.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="interfaceCard.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

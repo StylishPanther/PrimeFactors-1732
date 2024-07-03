@@ -2,68 +2,51 @@
 #include "../UnitTestProject/PrimeFactor.cpp"
 #include <vector>
 using namespace std;
-/*
 
-class AccountFixture : public testing::Test 
+class PrimeFixture : public testing::Test 
 {
 public:
-	Account account{ 10000 };
-	void checkBalance(int expected)
-	{
-		int ret = account.getBalance();
-		EXPECT_EQ(expected, ret);
-	}
+	PrimeFactor prime_factor;
+	vector<int> expected;
 };
-TEST_F(AccountFixture, CreateAccountInit_1)
+TEST_F(PrimeFixture, Of1)
 {
-	checkBalance(10000);
+	expected = {};
+	EXPECT_EQ(expected, prime_factor.of(1));
 }
 
-TEST_F(AccountFixture, CreateAccountInit_2)
+TEST_F(PrimeFixture, Of2)
 {
-	account.deposit(500);
-	checkBalance(10500);
+	expected = { 2 };
+	EXPECT_EQ(expected, prime_factor.of(2));
 }
 
-TEST_F(AccountFixture, CreateAccountInit_3)
+TEST_F(PrimeFixture, Of3)
 {
-	account.withdraw(400);
-	checkBalance(9600);
+	expected = { 3 };
+	EXPECT_EQ(expected, prime_factor.of(3));
 }
 
-TEST_F(AccountFixture, CreateAccountInit_4)
+TEST_F(PrimeFixture, Of4)
 {
-	account.withdraw(13000);
-	checkBalance(-3000);
-}
-*/
-/*
-TEST(TestcaseName, CreateAccountInitialize_1)
-{
-	BankAccount account{ 10000 };
-	EXPECT_EQ(account.getCurrentMoney(), 10000);
+	expected = { 2, 2 };
+	EXPECT_EQ(expected, prime_factor.of(4));
 }
 
-TEST(TestcaseName, getInterestRate_outCompoundRate_1)
+TEST_F(PrimeFixture, Of6)
 {
-	BankAccount account{ 10000 };
-	account.setInterestRate(5);
-	EXPECT_EQ((int)account.getPercentCompoundInterest(2), (int)11025);
+	expected = { 2, 3 };
+	EXPECT_EQ(expected, prime_factor.of(6));
 }
 
-TEST(TestcaseName, getInterestRate_outCompoundRate_2)
+TEST_F(PrimeFixture, Of9)
 {
-	BankAccount account{ 10000 };
-	account.setInterestRate(10);
-	EXPECT_EQ((int)account.getPercentCompoundInterest(3), (int)13310);
+	expected = { 3, 3 };
+	EXPECT_EQ(expected, prime_factor.of(9));
 }
 
-TEST(TestcaseName, getInterestRate_1)
+TEST_F(PrimeFixture, Of12)
 {
-	BankAccount account{ 10000 };
-	account.setInterestRate(5);
-	EXPECT_EQ(account.getInterestRate() , 5);
+	expected = { 2, 2, 3 };
+	EXPECT_EQ(expected, prime_factor.of(12));
 }
-*/
-
-
