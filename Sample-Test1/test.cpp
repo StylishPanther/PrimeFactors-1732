@@ -17,7 +17,7 @@ TEST_F(PrimeFixture, Of1)
 
 TEST_F(PrimeFixture, Of2)
 {
-	expected = {2};
+	expected = { 2 };
 	EXPECT_EQ(expected, prime_factor.of(2));
 }
 
