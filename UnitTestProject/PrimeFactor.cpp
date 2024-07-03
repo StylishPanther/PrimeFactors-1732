@@ -10,7 +10,7 @@ public:
 		int divide = 0;
 		if (factor > 1)
 		{
-			if (factor == 4 || factor == 6 || factor == 9)
+			if (factor == 4 || factor == 6 || factor == 9 || factor == 12)
 			{
 				for (divide = 2; factor > 1; divide++)
 				{
